@@ -14,3 +14,21 @@ public function fail(Request $request)
         return redirect()->url()->previous();
 
     }
+
+public function updateQuantity(Request $request)
+    {
+        $cart = $request->session()->get('cart', collect([]));
+        $cart = $cart->map(function ($object, $key) use ($request) {
+            if($key == $request->key){
+                $object['quantity'] = $request->quantity;
+                if($object['quantity'] == 5){
+                    $object['price'] = 100;
+                }
+            }
+
+            return $object;
+        });
+        $request->session()->put('cart', $cart);
+
+        return view('frontend.partials.cart_details');
+    }
