@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" sizes="96x96" href="./src/assets/bag.png">
+  <title>Superstore</title>
+  <link href="http://superstore-1.1.pukutech.com/static/css/app.0f6bfc1600fb75b79300289809ab407a.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <div  class="application theme--light" id="app">
+      <div class="application--wrap">
+        <div class="layout">
+          <div class="left_navbar">
+            <aside class="v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--fixed v-navigation-drawer--open theme--light" data-booted="true" style="height: 100%; margin-top: 64px; transform: translateX(0px); width: 300px; max-height: calc(100% - 64px);">
+              <div class="mob_search_bar hidden-md-and-up pt-2">
+                <div class="v-input ml-3 v-text-field v-text-field--single-line v-text-field--solo v-text-field--solo-inverted v-text-field--solo-flat v-text-field--enclosed v-input--hide-details theme--light">
+                  <div class="v-input__control">
+                    <div class="v-input__slot">
+                      <div class="v-text-field__slot">
+                        <label aria-hidden="true" class="v-label theme--light" style="left: 0px; right: auto; position: absolute;">What items you looking for?</label>
+                        <input aria-label="What items you looking for?" items="" cache-items="" hide-no-data="" type="text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mt-2 v-divider theme--light">
+              </div>
+              <div class="hidden-md-and-up mobile_menu">
+                <a href="/" class="router-link-exact-active router-link-active">
+                  <div role="listitem">
+                    <div class="v-list__tile theme--light">
+                      <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">house</i>
+                      </div>
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Home</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/featured-products" class="">
+                  <div role="listitem">
+                    <div class="v-list__tile theme--light">
+                      <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">redeem</i>
+                      </div>
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Featured</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/products" class="">
+                  <div role="listitem">
+                    <div class="v-list__tile theme--light">
+                      <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">store</i>
+                      </div>
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Collection</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/sign-in" class="">
+                  <div role="listitem">
+                    <div class="v-list__tile theme--light">
+                      <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">how_to_reg</i>
+                      </div>
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Sign In</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="/create-account" class="">
+                  <div role="listitem">
+                    <div class="v-list__tile theme--light">
+                      <div class="v-list__tile__action"><i aria-hidden="true" class="v-icon material-icons theme--light">person_add</i>
+                      </div>
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Create Account</div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <!---->
+                <!---->
+                <hr class="v-divider theme--light">
+              </div>
+              <div role="list" class="v-list v-list--dense theme--light">
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 99.0099%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.19272621620056696_dairy.jpg?alt=media&amp;token=0d7564aa-2b47-4d5b-a4ff-979ef2c7ca86&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Dairy" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Dairy</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 108%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.5431584963073892_beauty.jpg?alt=media&amp;token=f4a6cd8f-7e86-4981-aef8-57a19194c8f6&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Beauty%20Products" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Beauty Products</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 106%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.6997233511076169_snacks.jpg?alt=media&amp;token=67170e65-18dc-4eda-a49b-3c3b50344716&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Snacks" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Snacks</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 78.7879%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.8765062334439437_MEAT.jpg?alt=media&amp;token=2ad399b7-1a6c-484c-a7f1-cfc094eb8f6b&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Meat%20&amp;%20Fish" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Meat &amp; Fish</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 96.1538%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.12686139292694154_office.jpg?alt=media&amp;token=3094043a-d805-43b0-b462-18bb896e7fed&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Office%20Products" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Office Products</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 95.2381%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.00022271199571965994_home-cleaning.jpg?alt=media&amp;token=1914abc0-2eb0-4fe9-88d0-b646abd05362&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Home%20&amp;%20Cleaning" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Home &amp; Cleaning</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 101%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.7921788115094714_babycare.jpg?alt=media&amp;token=90fb50db-3be5-4659-8824-1fd167bc68f7&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Baby%20Care" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Baby Care</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 93.4579%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.5871338489457878_health-care.jpg?alt=media&amp;token=ca61ffac-0d0f-42a8-892d-a363d557b67e&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Health%20Care" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Health Care</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 107%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.2367978369075281_home.jpg?alt=media&amp;token=b1fa9925-654d-4503-9f9c-e801e66cfbaa&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Home%20Appliances" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Home Appliances</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 97.0874%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.23482737193529402_FRUITS.jpg?alt=media&amp;token=99a7005c-5b5d-43ed-8cce-fc5f4ce09ce9&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Fruits%20&amp;%20Vegetables" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Fruits &amp; Vegetables</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 106%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.9469820280050911_beverages.jpg?alt=media&amp;token=8dc2ab0f-0201-4d1f-9506-b409582952c0&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Beverages" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Beverages</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div role="listitem">
+                  <div class="v-list__tile theme--light">
+                    <div class="v-list__tile__action">
+                      <a href="/" class="router-link-exact-active router-link-active">
+                        <div class="v-responsive v-image" style="width: 20px;">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.6174228786388614_COOKING.jpg?alt=media&amp;token=729f1e60-1d00-41ec-9922-4742eda176f1&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                      </a>
+                    </div>
+                    <a href="/category/Cooking" class="" style="color: rgba(0, 0, 0, 0.87);">
+                      <div class="v-list__tile__content">
+                        <div class="v-list__tile__title">Cooking</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="v-navigation-drawer__border"></div>
+            </aside>
+            <nav class="shop_toolbar v-toolbar v-toolbar--clipped v-toolbar--fixed theme--dark" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);" data-booted="true">
+              <div class="v-toolbar__content" style="height: 64px;">
+                <div class="v-toolbar__title ml-0">
+                  <button type="button" class="v-toolbar__side-icon v-btn v-btn--icon theme--dark">
+                    <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark">menu</i>
+                    </div>
+                  </button>
+                </div>
+                <a href="/" class="router-link-exact-active router-link-active">
+                  <img style="width: 150px;" src="https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/logo%2F0.049879349065674816_logo.png?alt=media&amp;token=ac37c5cf-9304-4edb-9818-d1e2a8bea0af">
+                </a>
+                <div class="large_device_search_bar hidden-sm-and-down">
+                  <div class="v-input ml-3 v-text-field v-text-field--single-line v-text-field--solo v-text-field--solo-inverted v-text-field--solo-flat v-text-field--enclosed v-input--hide-details theme--dark">
+                    <div class="v-input__control">
+                      <div class="v-input__slot">
+                        <div class="v-text-field__slot">
+                          <label aria-hidden="true" class="v-label theme--dark" style="left: 0px; right: auto; position: absolute;">What items you looking for?</label>
+                          <input aria-label="What items you looking for?" items="" cache-items="" hide-no-data="" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="menu_item hidden-sm-and-down pa-0">
+                  <a href="/" class="router-link-exact-active router-link-active">
+                    <button type="button" class="v-btn v-btn--flat theme--dark">
+                      <div class="v-btn__content">HOME</div>
+                    </button>
+                  </a>
+                  <a href="/about" class="">
+                    <button type="button" class="v-btn v-btn--flat theme--dark">
+                      <div class="v-btn__content">ABOUT</div>
+                    </button>
+                  </a>
+                  <a href="/popular-categories" class="">
+                    <button type="button" class="v-btn v-btn--flat theme--dark">
+                      <div class="v-btn__content">Popular Categories</div>
+                    </button>
+                  </a>
+                  <a href="/cart" class="">
+                    <button type="button" class="v-btn v-btn--flat theme--dark">
+                      <div class="v-btn__content">CART</div>
+                    </button>
+                  </a>
+                  <a href="/sign-in" class="">
+                    <button type="button" class="v-btn v-btn--flat theme--dark">
+                      <div class="v-btn__content">SIGNIN</div>
+                    </button>
+                  </a>
+                  <a href="/create-account" class="">
+                    <button type="button" class="v-btn v-btn--flat theme--dark">
+                      <div class="v-btn__content">CREATE ACCOUNT</div>
+                    </button>
+                  </a>
+                  <a href="/account" class=""></a>
+                  <!---->
+                </div>
+              </div>
+            </nav>
+          </div>
+          <main class="v-content" data-booted="true" style="padding: 64px 0px 0px 300px;">
+            <div class="v-content__wrap">
+              <div data-v-ce622428="" class="layout">
+                <div data-v-ce622428="" class="container slider_container fluid">
+                  <div data-v-ce622428="" class="layout flex_box feature row wrap">
+                    <div data-v-ce622428="" class="v-window v-carousel slider" style="height: 500px;">
+                      <div class="v-window__container" style="height: 500px;">
+                        <div data-v-ce622428="">
+                          <div data-v-ce622428="" class="v-window-item" style="display: none;">
+                            <div class="v-responsive v-image v-carousel__item" style="height: 500px;">
+                              <div class="v-responsive__sizer" style="padding-bottom: 33.2812%;"></div>
+                              <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/slider%2F0.7663049179776407_slider4.jpg?alt=media&amp;token=d4297743-5823-4314-bbe1-1c3c7591e4a0&quot;); background-position: center center;"></div>
+                              <div class="v-responsive__content">
+                                <div data-v-ce622428="" class="container" style="height: 100%;">
+                                  <div data-v-ce622428="" class="layout column align-left justify-center" style="height: 100%;">
+                                    <h1 data-v-ce622428="" class="mb-3" style="color: black;">Best Shopping Experience </h1> 
+                                    <p data-v-ce622428="" style="color: black; font-size: 20px;">Order today for the best shopping experience in the town.</p>
+                                    <a data-v-ce622428="" href="/popular-categories" class="v-btn v-btn--router theme--dark">
+                                      <div class="v-btn__content">Check All Items</div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div data-v-ce622428="" class="layer"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div data-v-ce622428="">
+                          <div data-v-ce622428="" class="v-window-item" style="">
+                            <div class="v-responsive v-image v-carousel__item" style="height: 500px;">
+                              <div class="v-responsive__sizer" style="padding-bottom: 33.3333%;"></div>
+                              <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/slider%2F0.45367034554416685_slider1.jpg?alt=media&amp;token=ca3ca7be-6a57-44e9-986e-5d28440b5669&quot;); background-position: center center;"></div>
+                              <div class="v-responsive__content">
+                                <div data-v-ce622428="" class="container" style="height: 100%;">
+                                  <div data-v-ce622428="" class="layout column align-left justify-center" style="height: 100%;">
+                                    <h1 data-v-ce622428="" class="mb-3" style="color: black;">Home Delivery Available </h1> 
+                                    <p data-v-ce622428="" style="color: black; font-size: 20px;">Best Shopping Experience Order today for the best shopping experience in the town.</p>
+                                    <a data-v-ce622428="" href="/popular-categories" class="v-btn v-btn--router theme--dark">
+                                      <div class="v-btn__content">Check All Items</div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div data-v-ce622428="" class="layer"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="v-carousel__prev">
+                        <button type="button" class="v-btn v-btn--icon theme--dark" aria-label="Previous visual">
+                          <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark" style="font-size: 46px;">chevron_left</i>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="v-carousel__next">
+                        <button type="button" class="v-btn v-btn--icon theme--dark" aria-label="Next visual">
+                          <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark" style="font-size: 46px;">chevron_right</i>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="v-carousel__controls">
+                        <div class="v-item-group theme--dark">
+                          <button type="button" value="0" class="v-btn v-btn--icon v-btn--small theme--dark v-carousel__controls__item">
+                            <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark" style="font-size: 18px;">fiber_manual_record</i>
+                            </div>
+                          </button>
+                          <button type="button" value="1" class="v-btn v-btn--active v-btn--icon v-btn--small theme--dark v-carousel__controls__item">
+                            <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark" style="font-size: 18px;">fiber_manual_record</i>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-b370d138="" class="layout">
+                <div data-v-b370d138="" class="container grid-list-lg">
+                  <div data-v-b370d138="" class="layout row wrap">
+                    <div data-v-b370d138="" class="flex xs12">
+                      <h5 data-v-b370d138="" class="text-xs-center">Categories</h5> 
+                      <h2 data-v-b370d138="" class="text-xs-center feature_products_title">Popular <span data-v-b370d138="">Categories</span></h2> 
+                      <div data-v-b370d138="" class="title_border"></div>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Meat &amp; Fish" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Meat &amp; Fish</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 78.7879%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.8765062334439437_MEAT.jpg?alt=media&amp;token=2ad399b7-1a6c-484c-a7f1-cfc094eb8f6b&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Fruits &amp; Vegetables" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Fruits &amp; Vegetables</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 97.0874%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.23482737193529402_FRUITS.jpg?alt=media&amp;token=99a7005c-5b5d-43ed-8cce-fc5f4ce09ce9&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Cooking" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Cooking</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.6174228786388614_COOKING.jpg?alt=media&amp;token=729f1e60-1d00-41ec-9922-4742eda176f1&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Beverages" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Beverages</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 106%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.9469820280050911_beverages.jpg?alt=media&amp;token=8dc2ab0f-0201-4d1f-9506-b409582952c0&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Home &amp; Cleaning" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Home &amp; Cleaning</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 95.2381%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.00022271199571965994_home-cleaning.jpg?alt=media&amp;token=1914abc0-2eb0-4fe9-88d0-b646abd05362&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Office Products" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Office Products</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 96.1538%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.12686139292694154_office.jpg?alt=media&amp;token=3094043a-d805-43b0-b462-18bb896e7fed&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Health Care" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Health Care</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 93.4579%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.5871338489457878_health-care.jpg?alt=media&amp;token=ca61ffac-0d0f-42a8-892d-a363d557b67e&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Baby Care" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Baby Care</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 101%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.7921788115094714_babycare.jpg?alt=media&amp;token=90fb50db-3be5-4659-8824-1fd167bc68f7&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Beauty Products" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Beauty Products</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 108%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.5431584963073892_beauty.jpg?alt=media&amp;token=f4a6cd8f-7e86-4981-aef8-57a19194c8f6&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Home Appliances" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Home Appliances</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 107%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.2367978369075281_home.jpg?alt=media&amp;token=b1fa9925-654d-4503-9f9c-e801e66cfbaa&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Dairy" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Dairy</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 99.0099%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.19272621620056696_dairy.jpg?alt=media&amp;token=0d7564aa-2b47-4d5b-a4ff-979ef2c7ca86&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div data-v-b370d138="" class="flex xs-12 sm6 md6 lg3">
+                      <a data-v-b370d138="" href="/category/Snacks" class="product_category d-flex  v-card v-sheet theme--light">
+                        <div data-v-b370d138="">Snacks</div>
+                        <div data-v-b370d138="">
+                          <div data-v-b370d138="" class="v-responsive v-image right" style="height: 60px; width: 60px;">
+                            <div class="v-responsive__sizer" style="padding-bottom: 106%;"></div>
+                            <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/product-category%2F0.6997233511076169_snacks.jpg?alt=media&amp;token=67170e65-18dc-4eda-a49b-3c3b50344716&quot;); background-position: center center;"></div>
+                            <div class="v-responsive__content"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layout">
+                <div class="container grid-list-lg">
+                  <div class="layout flex_box feature_products row wrap">
+                    <div class="flex xs12">
+                      <h5 class="text-xs-center">Products</h5> 
+                      <h2 class="text-xs-center feature_products_title">Our Featured <span> Products</span></h2> 
+                      <div class="title_border"></div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.38634564778041525_cocola-egg-noodles-180-gm.jpg?alt=media&amp;token=768d933b-93af-41cd-af62-1fd9f11e6383&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Cocola Egg Noodles</h3> 
+                          <h4 class="grey--text text--darken-3">$3</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Cocola Egg Noodles</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/joH3xh2yh3wZTIGgo1bY" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.7742832133382995_rfl-topper-nonstick-red-fry-pan-805007-26-cm.jpg?alt=media&amp;token=2a5eadff-6d0a-4a3b-ba45-b93de75b9589&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Rfl Topper Nonstick </h3> 
+                          <h4 class="grey--text text--darken-3">$50</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Rfl Topper Nonstick </h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/611m0nDpAabyTMZmBbwi" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.4039979693245448_four-sided-stainless-steel-grater-1-pcs.jpg?alt=media&amp;token=81872afc-3e2f-4a0c-8a12-556b2dbd4ea3&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Steel Grater</h3> 
+                          <h4 class="grey--text text--darken-3">$10</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Steel Grater</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/yNTOF6qRBJjono5MnNit" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.001508879651265227_fevicol-super-glue-3-gm.jpg?alt=media&amp;token=1a00d83e-7711-4de1-853d-e6f8d87aab3c&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Fevicol Super Glue</h3> 
+                          <h4 class="grey--text text--darken-3">$5</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Fevicol Super Glue</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/6ftdvo4XXO48Es44NYsG" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.33815505261977785_maxell-alkaline-battery-aaa-2-pcs.jpg?alt=media&amp;token=a94636f1-a2c9-49b8-bc5b-e1bd55302517&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Maxell Alkaline Batteries</h3> 
+                          <h4 class="grey--text text--darken-3">$9</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Maxell Alkaline Batteries</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/7e133e9IdSt69tJQOyuz" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.9751168204087568_sunlite-heavy-duty-aaa-battery-2-pcs.jpg?alt=media&amp;token=8c76e6bb-4f3a-4908-9b4c-a59645f604b6&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Sunlite Heavy Duty Battery</h3> 
+                          <h4 class="grey--text text--darken-3">$8</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Sunlite Heavy Duty Battery</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/glmDCikTo8yQ4NVFFCX9" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.42961439701909443_marks-active-school-2-in-1-chocolate-milk-powder-400-gm.jpg?alt=media&amp;token=a64761d2-5ff1-403c-8b62-9a3f3f489b18&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Marks Chocolate Milk</h3> 
+                          <h4 class="grey--text text--darken-3">$14</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Marks Chocolate Milk</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/BR5N7ow7RDCaqU6fib6t" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.5301171214020093_diploma-full-cream-milk-powder-500-gm.jpg?alt=media&amp;token=95fd9722-b1f1-46a3-a62a-28b44363e854&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Diploma Full Cream </h3> 
+                          <h4 class="grey--text text--darken-3">$8</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Diploma Full Cream </h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/DGLTDDdH2Ejs2veAYrRO" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.28611874843760954_aarong-dairy-butter-100-gm.jpg?alt=media&amp;token=043b4aa3-54e2-463c-a22d-c5f517fef1b3&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Aarong Butter</h3> 
+                          <h4 class="grey--text text--darken-3">$10</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Aarong Butter</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/DU18IZMcjlDORL4K1mNm" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 124.857%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.7277478696792463_prodental-b-cool-mint-mouth-wash-100-ml-1-pcs.jpg?alt=media&amp;token=22b3574b-63f5-47be-8fdb-2c13c55628c7&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Prodental Mouthwash</h3> 
+                          <h4 class="grey--text text--darken-3">$16</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Prodental Mouthwash</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/Zshbqb7kFbqo6TO4lg5o" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.30383654379709557_pepsodent.jpg?alt=media&amp;token=d0752cb5-09eb-4c3e-a2f8-3cbc7bc873f8&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Pepsodent Toothpaste</h3> 
+                          <h4 class="grey--text text--darken-3">$11</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Pepsodent Toothpaste</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/hYhvda7aguVfwhChEtsS" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.30643215344162766_parachute-coconut-oil-200-ml.jpg?alt=media&amp;token=0ceea72c-8908-46bb-af82-067c8208398a&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Parachute Hair Oil</h3> 
+                          <h4 class="grey--text text--darken-3">$6</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Parachute Hair Oil</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/TFSGDDfJyBi8g8nuSU3V" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.06471216019189074_huggies-dry-baby-diaper-belt-m-6-11-kg-72-pcs.jpg?alt=media&amp;token=62ffca23-ff29-4f6f-b3a5-18a7bf5a1bdb&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Huggies Dry Diaper</h3> 
+                          <h4 class="grey--text text--darken-3">$9</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Huggies Dry Diaper</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/bTlvzoeXk5FsAyno9J8X" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.7845764695420459_freshmaker-jumbo-baby-wet-wipes-120-pcs.jpg?alt=media&amp;token=aa9f8693-ea68-4061-b9e3-c4d918efbf72&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Freshmaker Baby Wet Wipes</h3> 
+                          <h4 class="grey--text text--darken-3">$8</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Freshmaker Baby Wet Wipes</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/im8QhSbvqjVFiKEPwoEp" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.28689041293078676_kidz-cotton-baby-wet-wipes-56-pcs.jpg?alt=media&amp;token=78cdf5dd-75f8-4b28-89d9-0b7199bdd5ff&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Kids Cotton Baby Wet Wipes</h3> 
+                          <h4 class="grey--text text--darken-3">$7</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Kids Cotton Baby Wet Wipes</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/zutlOaaIBeuHsiKk3k6m" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 92%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.7143426655606637_144-1-e1564061467718.png?alt=media&amp;token=9b6b6e34-dc07-45b5-b500-86ecb285a7cb&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Hajmola</h3> 
+                          <h4 class="grey--text text--darken-3">$3</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Hajmola</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/ZF8yodbwVk5YIuwYKbju" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.43539547740627826_horlicks-jar-550-gm.jpg?alt=media&amp;token=0dba75da-ff6c-4d04-b925-5c6342989383&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Horlicks</h3> 
+                          <h4 class="grey--text text--darken-3">$5</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Horlicks</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/RpY3PmA3b2OPIo8eXSI0" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.4168754396444112_lizol-floor-cleaner-lavender-disinfectant-surface-500-ml.jpg?alt=media&amp;token=36a00a66-637b-4303-98ab-e1091a38f0d6&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Lizol Floor Cleaner</h3> 
+                          <h4 class="grey--text text--darken-3">$6</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Lizol Floor Cleaner</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/9mMbFHB5KtzcphlX20Gq" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.6348897969068015_harpic-bathroom-cleaning-powder-original-400-gm.jpg?alt=media&amp;token=d9db5815-1544-4189-9465-fd5d3966a2f9&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Harpic Cleaning Powder</h3> 
+                          <h4 class="grey--text text--darken-3">$3</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Harpic Cleaning Powder</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/UgjB57EDViBJZ67vHD6h" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.6458599452882252_trix-dishwashing-liquid-refill-sparkling-clean-with-lemon-fragrance-250-ml.jpg?alt=media&amp;token=32661543-0788-4ebe-8039-8c297b7a763d&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Trix Dishwash Liquid Refill Pack</h3> 
+                          <h4 class="grey--text text--darken-3">$9</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Trix Dishwash Liquid Refill Pack</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/PSBcWQvUECBo044ihvES" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.13052154227887836_vim-dishwashing-liquid-500-ml.jpg?alt=media&amp;token=cbe1cad0-386d-4655-805c-28c337f1236b&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Vim Dishwash Liquid</h3> 
+                          <h4 class="grey--text text--darken-3">$12</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Vim Dishwash Liquid</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/w5t3NRykuqdhI70TB4To" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 106.571%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.7756588679591372_nescafe.jpg?alt=media&amp;token=44a83530-0b8b-42c8-9bf2-7b728c9df37f&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Nescafe Coffee</h3> 
+                          <h4 class="grey--text text--darken-3">$4</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Nescafe Coffee</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/x3rsUlJTBToupNdDVDEG" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.7121292097565914_finlay-gold-tea-200-gm.jpg?alt=media&amp;token=93d954ac-0d42-431e-bafd-69448f108269&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Finlay Tea</h3> 
+                          <h4 class="grey--text text--darken-3">$4</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Finlay Tea</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/uy5ttlwSvYpYfqnIQROQ" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.735771300189_red-label-black-tea-400-gm.jpg?alt=media&amp;token=cbde792d-12af-43f3-96f0-bd16d44e15db&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Red Label Black Tea </h3> 
+                          <h4 class="grey--text text--darken-3">$5</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Red Label Black Tea </h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/pKAvXODLzuBC1CZKpjkv" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.15593902883391508_potato-regular-net-weight-50-gm-1-kg.jpg?alt=media&amp;token=bc870ba5-ae82-4500-a2a0-220ea1d24f73&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Potato 1kg</h3> 
+                          <h4 class="grey--text text--darken-3">$2</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Potato 1kg</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/O32Dey2utyfIfySzfDQm" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.5946221099754843_red-tomato-net-weight-10-gm-500-gm.jpg?alt=media&amp;token=7407db91-268a-4626-abe5-a63c49e1a472&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Tomato 500gm</h3> 
+                          <h4 class="grey--text text--darken-3">$5</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Tomato 500gm</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/kwUkRUw8cs4Irnt87GtP" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.7844690378991908_16_10.jpg?alt=media&amp;token=1689ee32-9f30-4d54-aec0-b314f5fddc2b&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Pran Mustard Oil</h3> 
+                          <h4 class="grey--text text--darken-3">$8</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Pran Mustard Oil</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/0cjjf3ISHIJexD60ZaSg" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.2386149111167437_rupchanda-soyabean-oil-bottle-5ltr.jpg?alt=media&amp;token=ecb970a3-3658-49bc-bdfd-503b2dea05c5&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Rupchanda Soyabean Oil</h3> 
+                          <h4 class="grey--text text--darken-3">$30</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Rupchanda Soyabean Oil</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/LyTSaabX51DrliN6S3h1" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.7870882221102322_pran-miniket-rice-5-kg.jpg?alt=media&amp;token=6ab0eeb0-1e79-41b2-ae50-f1de1608628e&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Pran Miniket Rice -5kg</h3> 
+                          <h4 class="grey--text text--darken-3">$18</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Pran Miniket Rice -5kg</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/k6S2yaairkkx2eFWcnOa" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.6182839441118344_ACI-Pure-Chinigura-Aromatic-Rice-1kg.jpg?alt=media&amp;token=3fcae6bf-255d-466a-be1b-127f4394a1b2&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">ACI Pure Chinigura Aromatic Rice-1kg</h3> 
+                          <h4 class="grey--text text--darken-3">$10</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">ACI Pure Chinigura Aromatic Rice-1kg</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/AvMxQLW2O3DHQCyaOqoV" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.23555971258159714_PRAN-Nazirsail-Rice-5kg.jpg?alt=media&amp;token=2377b55b-95f6-46e1-a935-e6c9b92f882d&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Pran Nazirshail Rice 5kg</h3> 
+                          <h4 class="grey--text text--darken-3">$20</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Pran Nazirshail Rice 5kg</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/rYbpykxeSVqlvOJNKvbg" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.30057794832067386_gala-apples.png?alt=media&amp;token=0eaedfa4-0b9c-4aeb-a745-363606fd2d7a&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Gala Apple</h3> 
+                          <h4 class="grey--text text--darken-3">$3</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Gala Apple</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/tCVRs6LmB1Sroop6w714" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 74.9698%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.24988320282192_1383770571120.jpeg?alt=media&amp;token=fc7e4d25-72ca-4c6f-88fa-7bd0afceb26a&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Chicken Nuggets</h3> 
+                          <h4 class="grey--text text--darken-3">$7</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Chicken Nuggets</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/cVcPQSdhP7PY3m48XXcm" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.0875512096004496_heinz-baked-beans-tomato-sauce-415-gm.jpg?alt=media&amp;token=d1fadb17-b8c3-4ed9-ab75-04d44982dc59&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Heinz Baked Beans</h3> 
+                          <h4 class="grey--text text--darken-3">$13</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Heinz Baked Beans</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/QUdR1X6DPqV5bg7FclVh" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.855911587044399_hilsha-fish-special.jpg?alt=media&amp;token=13664f3b-7590-4bdf-a6d5-7e7abf8836e3&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Hilsha Fish</h3> 
+                          <h4 class="grey--text text--darken-3">$11</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Hilsha Fish</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/rAltpVm1Bxgd29FOWG7m" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 101%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.15812894132707145_black-pomphret-fish.jpg?alt=media&amp;token=853d0f1a-ad8d-4b7a-b037-817c01dd793b&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Black Pomphret Fish</h3> 
+                          <h4 class="grey--text text--darken-3">$6</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Black Pomphret Fish</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/RTC61W5eXUnSM07Uk5Lv" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.7257235989601687_squid-ring-500-gm.jpg?alt=media&amp;token=1b340f5f-f62c-4466-af5c-366d641fd903&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Squid Ring</h3> 
+                          <h4 class="grey--text text--darken-3">$5</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Squid Ring</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/346efsUMOQisVCLM6I43" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.1112616927830492_basa-dory-fish-fillet-1-kg.jpg?alt=media&amp;token=d8910916-2acd-473b-88b0-e84d0f958804&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Dory Fish</h3> 
+                          <h4 class="grey--text text--darken-3">$5</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Dory Fish</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/nBsa7FAbnKOizKxbKmpU" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.44189334666991065_bengal-meat-bbq-chicken-wings.jpg?alt=media&amp;token=375d0264-4c1d-45ff-aa5d-eeabfd5a952a&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Chicken Wing</h3> 
+                          <h4 class="grey--text text--darken-3">$3</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Chicken Wing</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/n5ozlSZ7DPU5xWdySuRK" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.7168676206831464_guava-thai-net-weight-50-gm-1-kg.jpg?alt=media&amp;token=c43c6aee-b52f-4602-92d7-2ac28555abea&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Guava</h3> 
+                          <h4 class="grey--text text--darken-3">$2</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Guava</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/fxBSXt1X46Q5AJlu6VHX" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.4889629387767469_malta-net-weight-50-gm-1-kg.jpg?alt=media&amp;token=10f7c02c-42b2-4945-8067-03f606131d49&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Malta</h3> 
+                          <h4 class="grey--text text--darken-3">$4</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Malta</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/JbhuP3EJ66OOUAewpwNV" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex_item xs6 sm3 md3 lg3 xl2">
+                      <div class="overlay_container flex_wrap  pa-2 v-card v-sheet theme--light">
+                        <div class="v-responsive v-image">
+                          <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                          <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/products%2F0.665943385269572_green-apple-net-weight-50-gm-1-kg.jpg?alt=media&amp;token=5e396d7e-5625-4c86-ac16-a59a65d55804&quot;); background-position: center center;"></div>
+                          <div class="v-responsive__content"></div>
+                        </div>
+                        <div class="text-xs-center flex_bottom pb-2" style="width: 100%;">
+                          <h3 class="text--darken-3">Green Apple</h3> 
+                          <h4 class="grey--text text--darken-3">$2</h4>
+                        </div>
+                        <div class="overlay v-card v-sheet theme--light">
+                          <h2 style="vertical-align: middle;">Green Apple</h2> 
+                          <div role="list" class="v-list details theme--light">
+                            <div class="v-list__tile__action">
+                              <a href="/product/pKzmlThie3i7KzsBrH9t" class="v-btn v-btn--router theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Details</div>
+                              </a>
+                            </div>
+                            <div class="v-list__tile__action">
+                              <button type="button" class="main_color white--text v-btn theme--light" style="width: 100%;">
+                                <div class="v-btn__content">Add To Cart</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-2c0a0fb6="" class="layout">
+                <div data-v-2c0a0fb6="" class="container">
+                  <div data-v-2c0a0fb6="" class="layout flex_box feature mt-4 row wrap">
+                    <div data-v-2c0a0fb6="" class="flex xs12">
+                      <h5 data-v-2c0a0fb6="" class="text-xs-center">Testimonial</h5> 
+                      <h2 data-v-2c0a0fb6="" class="text-xs-center feature_products_title">What <span data-v-2c0a0fb6=""> People Say</span></h2> 
+                      <div data-v-2c0a0fb6="" class="title_border"></div>
+                    </div>
+                    <div data-v-2c0a0fb6="" class="container testimonial brown lighten-5 fluid">
+                      <div data-v-2c0a0fb6="" class="container">
+                        <div data-v-2c0a0fb6="" class="v-window v-carousel" style="height: 500px;">
+                          <div class="v-window__container" style="height: 500px;">
+                            <div data-v-2c0a0fb6="" class="v-window-item" style="display: none;">
+                              <div class="v-responsive v-image v-carousel__item" style="height: 500px;">
+                                <div class="v-responsive__content">
+                                  <div data-v-2c0a0fb6="" class="flex testimonial_box xs12">
+                                    <div data-v-2c0a0fb6="" class="layout row wrap">
+                                      <div data-v-2c0a0fb6="" class="flex xs12 sm6 md5 lg4">
+                                        <div data-v-2c0a0fb6="" class="v-responsive v-image testimonial_client_img">
+                                          <div class="v-responsive__sizer" style="padding-bottom: 84.5%;"></div>
+                                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/reviews%2F0.5390554169725859_r2.webp?alt=media&amp;token=c525251f-9f81-4330-80fe-d10d66209187&quot;); background-position: center center;"></div>
+                                          <div class="v-responsive__content"></div>
+                                        </div>
+                                        <h3 data-v-2c0a0fb6="">Dev Watson</h3> 
+                                        <h4 data-v-2c0a0fb6=""><strong data-v-2c0a0fb6="">CTO</strong></h4>
+                                      </div>
+                                      <div data-v-2c0a0fb6="" class="flex height_grid xs12 sm6 md7 lg8">
+                                        <p data-v-2c0a0fb6=""><em data-v-2c0a0fb6="">I have been shopping from Mehedi Mart for the past few days and i am loving the experience. Have been shopping from here and i have recommended my relatives too. They are also happy with the service. The prices are comparatively low and the products are genuine.</em>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div data-v-2c0a0fb6="" class="v-window-item" style="">
+                              <div class="v-responsive v-image v-carousel__item" style="height: 500px;">
+                                <div class="v-responsive__content">
+                                  <div data-v-2c0a0fb6="" class="flex testimonial_box xs12">
+                                    <div data-v-2c0a0fb6="" class="layout row wrap">
+                                      <div data-v-2c0a0fb6="" class="flex xs12 sm6 md5 lg4">
+                                        <div data-v-2c0a0fb6="" class="v-responsive v-image testimonial_client_img">
+                                          <div class="v-responsive__sizer" style="padding-bottom: 85.6667%;"></div>
+                                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/reviews%2F0.05467535043511451_r3.webp?alt=media&amp;token=52a08e2d-ab9d-450f-aca7-ffc29de61fc1&quot;); background-position: center center;"></div>
+                                          <div class="v-responsive__content"></div>
+                                        </div>
+                                        <h3 data-v-2c0a0fb6="">Devid Milton</h3> 
+                                        <h4 data-v-2c0a0fb6=""><strong data-v-2c0a0fb6="">Owner</strong></h4>
+                                      </div>
+                                      <div data-v-2c0a0fb6="" class="flex height_grid xs12 sm6 md7 lg8">
+                                        <p data-v-2c0a0fb6=""><em data-v-2c0a0fb6="">Satisfied by their professionalism ! Got my products in time. And their service quality is awesome. Keep it up !</em>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div data-v-2c0a0fb6="" class="v-window-item" style="display: none;">
+                              <div class="v-responsive v-image v-carousel__item" style="height: 500px;">
+                                <div class="v-responsive__content">
+                                  <div data-v-2c0a0fb6="" class="flex testimonial_box xs12">
+                                    <div data-v-2c0a0fb6="" class="layout row wrap">
+                                      <div data-v-2c0a0fb6="" class="flex xs12 sm6 md5 lg4">
+                                        <div data-v-2c0a0fb6="" class="v-responsive v-image testimonial_client_img">
+                                          <div class="v-responsive__sizer" style="padding-bottom: 90.4762%;"></div>
+                                          <div class="v-image__image v-image__image--cover" style="background-image: url(&quot;https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/reviews%2F0.20886936495798114_r1.webp?alt=media&amp;token=0620e192-93d7-4bb0-af84-792ae81d91dd&quot;); background-position: center center;"></div>
+                                          <div class="v-responsive__content"></div>
+                                        </div>
+                                        <h3 data-v-2c0a0fb6="">Shane Conery</h3> 
+                                        <h4 data-v-2c0a0fb6=""><strong data-v-2c0a0fb6="">CEO</strong></h4>
+                                      </div>
+                                      <div data-v-2c0a0fb6="" class="flex height_grid xs12 sm6 md7 lg8">
+                                        <p data-v-2c0a0fb6=""><em data-v-2c0a0fb6="">Loved the service! I urgently needed some stuffs and ordered it here and they delivered in less than an hour as promised! Thanks a lot for that.</em>
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="v-carousel__prev">
+                            <button type="button" class="v-btn v-btn--icon theme--dark" aria-label="Previous visual">
+                              <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark" style="font-size: 46px;">chevron_left</i>
+                              </div>
+                            </button>
+                          </div>
+                          <div class="v-carousel__next">
+                            <button type="button" class="v-btn v-btn--icon theme--dark" aria-label="Next visual">
+                              <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark" style="font-size: 46px;">chevron_right</i>
+                              </div>
+                            </button>
+                          </div>
+                          <div class="v-carousel__controls">
+                            <div class="v-item-group theme--dark">
+                              <button type="button" value="0" class="v-btn v-btn--icon v-btn--small theme--dark v-carousel__controls__item">
+                                <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark" style="font-size: 18px;">fiber_manual_record</i>
+                                </div>
+                              </button>
+                              <button type="button" value="1" class="v-btn v-btn--active v-btn--icon v-btn--small theme--dark v-carousel__controls__item">
+                                <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark" style="font-size: 18px;">fiber_manual_record</i>
+                                </div>
+                              </button>
+                              <button type="button" value="2" class="v-btn v-btn--icon v-btn--small theme--dark v-carousel__controls__item">
+                                <div class="v-btn__content"><i aria-hidden="true" class="v-icon material-icons theme--dark" style="font-size: 18px;">fiber_manual_record</i>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-554b3728="" class="layout">
+                <div data-v-554b3728="" class="container grid-list-lg">
+                  <div data-v-554b3728="" class="layout feature row wrap">
+                    <div data-v-554b3728="" class="flex feature_box sm12 md4">
+                      <div data-v-554b3728="" class="v-card v-sheet theme--light">
+                        <div data-v-554b3728="" class="layout row wrap">
+                          <div data-v-554b3728="" class="flex pa-0 sm12 md4 lg3">
+                            <div data-v-554b3728="" class="icn_box"><i data-v-554b3728="" aria-hidden="true" class="v-icon discount material-icons theme--light" style="font-size: 40px;">accessible</i>
+                            </div>
+                          </div>
+                          <div data-v-554b3728="" class="flex py-0 sm12 md8 lg9">
+                            <div data-v-554b3728="" class="v-card__title v-card__title--primary">
+                              <div data-v-554b3728="" class="feature_headline">Convenient &amp; Quick</div>
+                            </div>
+                            <div data-v-554b3728="" class="v-card__text">
+                              <p data-v-554b3728="">No waiting in traffic, no haggling, no worries carrying groceries, We are delivered right at your door.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-v-554b3728="" class="flex feature_box sm12 md4">
+                      <div data-v-554b3728="" class="v-card v-sheet theme--light">
+                        <div data-v-554b3728="" class="layout row wrap">
+                          <div data-v-554b3728="" class="flex pa-0 sm12 md4 lg3">
+                            <div data-v-554b3728="" class="icn_box"><i data-v-554b3728="" aria-hidden="true" class="v-icon discount material-icons theme--light" style="font-size: 40px;">cake</i>
+                            </div>
+                          </div>
+                          <div data-v-554b3728="" class="flex py-0 sm12 md8 lg9">
+                            <div data-v-554b3728="" class="v-card__title v-card__title--primary">
+                              <div data-v-554b3728="" class="feature_headline">Fresh &amp; Quality</div>
+                            </div>
+                            <div data-v-554b3728="" class="v-card__text">
+                              <p data-v-554b3728="">Our fresh produce is sourced every morning, you get the best from us.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-v-554b3728="" class="flex feature_box sm12 md4">
+                      <div data-v-554b3728="" class="v-card v-sheet theme--light">
+                        <div data-v-554b3728="" class="layout row wrap">
+                          <div data-v-554b3728="" class="flex pa-0 sm12 md4 lg3">
+                            <div data-v-554b3728="" class="icn_box"><i data-v-554b3728="" aria-hidden="true" class="v-icon discount material-icons theme--light" style="font-size: 40px;">kitchen</i>
+                            </div>
+                          </div>
+                          <div data-v-554b3728="" class="flex py-0 sm12 md8 lg9">
+                            <div data-v-554b3728="" class="v-card__title v-card__title--primary">
+                              <div data-v-554b3728="" class="feature_headline">Collection of Products</div>
+                            </div>
+                            <div data-v-554b3728="" class="v-card__text">
+                              <p data-v-554b3728="">With huge collection of Products to choose from. You will get variety and options.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div data-v-7c40ea34="" class="layout">
+                <div data-v-7c40ea34="" class="flex main-footer mt-4">
+                  <div data-v-7c40ea34="" class="container">
+                    <div data-v-7c40ea34="" class="flex about_social text-xs-center">
+                      <img data-v-7c40ea34="" style="width: 150px;" src="https://firebasestorage.googleapis.com/v0/b/superstore-1-1.appspot.com/o/logo%2F0.049879349065674816_logo.png?alt=media&amp;token=ac37c5cf-9304-4edb-9818-d1e2a8bea0af">
+                    </div>
+                    <div data-v-7c40ea34="" class="flex text-center footer-bottom-data text-xs-center">
+                      <p data-v-7c40ea34="">Road-5, Block-D, West Colorado - Copyright2020@Tech Haat</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <div data-v-bacbee80="" class="layout row wrap">
+            <button data-v-bacbee80="" type="button" class="shop_card_section v-btn v-btn--small theme--light">
+              <div class="v-btn__content">
+                <div data-v-bacbee80="" class="shop_card"><i data-v-bacbee80="" aria-hidden="true" class="v-icon material-icons theme--light">add_shopping_cart</i> 
+                  <h5 data-v-bacbee80="">0 Item</h5> 
+                  <p data-v-bacbee80="">$0.00</p>
+                </div>
+              </div>
+            </button>
+            <aside data-v-bacbee80="" class="close_div v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--right theme--light" data-booted="true" style="height: 100%; margin-top: 64px; transform: translateX(300px); width: 300px; max-height: calc(100% - 64px);">
+              <div data-v-bacbee80="" class="flex xs12">
+                <div data-v-bacbee80="" role="list" class="v-list v-list--dense theme--light" style="margin: 0px !important; padding: 0px !important; border-top: 2px solid rgb(224, 224, 224);">
+                  <div data-v-bacbee80="" role="listitem" class="px-1 main_color  white--text">
+                    <div class="v-list__tile theme--light">
+                      <div data-v-bacbee80="" class="v-list__tile__action"><i data-v-bacbee80="" aria-hidden="true" class="v-icon white--text material-icons theme--light">shopping_cart</i>
+                      </div>
+                      <div data-v-bacbee80="" class="v-list__tile__title">0 Item</div>
+                      <button data-v-bacbee80="" type="button" class="white v-btn v-btn--small theme--light">
+                        <div class="v-btn__content"><span data-v-bacbee80="">close</span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div data-v-bacbee80="" class="flex right_navigation dense">
+                  <div data-v-bacbee80="" class="flex xs12">
+                    <div data-v-bacbee80="" class="v-responsive v-image" style="width: 100%; margin: 15% auto; border-radius: 50%; background: rgb(255, 255, 255); border: 1px solid rgb(236, 232, 232);">
+                      <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                      <div class="v-image__image v-image__image--contain" style="background-image: url(&quot;http://superstore-1.1.pukutech.com/static/img/bag2.d99d1f2.jpg&quot;); background-position: center center;"></div>
+                      <div class="v-responsive__content"></div>
+                    </div>
+                  </div>
+                  <div data-v-bacbee80="" class="flex px-3 xs12">
+                    <h2 data-v-bacbee80="">Your shopping bag is empty!</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="v-navigation-drawer__border"></div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/static/js/manifest.2ae2e69a05c33dfc65f8.js"></script>
+  <script type="text/javascript" src="/static/js/vendor.807a97f6ec97d6e537fe.js"></script>
+  <script type="text/javascript" src="/static/js/app.312d244b4f95cf4dc9c2.js"></script>
+</body>
+
+</html>
